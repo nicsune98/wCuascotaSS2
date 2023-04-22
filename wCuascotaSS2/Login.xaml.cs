@@ -19,9 +19,10 @@ namespace wCuascotaSS2
 
         private void btIngreso_Clicked(object sender, EventArgs e)
         {
-            if (txtUsuario.Text=="wcuascota" && txtContraseña.Text=="12345")
+            string estudiante = txtUsuario.Text;
+            if (txtUsuario.Text=="estudiante2023" && txtContraseña.Text=="uisrael2023")
             {
-                Navigation.PushAsync(new Calificaciones());
+                Navigation.PushAsync(new Calificaciones(estudiante));
                 txtUsuario.Text = "";
                 txtContraseña.Text = "";
             }

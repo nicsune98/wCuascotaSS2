@@ -13,9 +13,10 @@ namespace wCuascotaSS2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Calificaciones : ContentPage
     {
-        public Calificaciones()
+        public Calificaciones(string estudiante)
         {
             InitializeComponent();
+            lblUsuario.Text = "Usuario: "+estudiante;
         }
 
         private void btnCalcular_Clicked(object sender, EventArgs e)

@@ -4,6 +4,7 @@
              x:Class="wCuascotaSS2.Calificaciones">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="lblUsuario" FontSize="12" TextColor="#004185" HorizontalTextAlignment="Center"/>
             <Label Text="Sistema de calificaciones" FontSize="24" HorizontalTextAlignment="Center" TextColor="#004185"/>
             <Grid>
                 <Grid.RowDefinitions>
